@@ -1,9 +1,82 @@
+$black-sea: #47555e;
+$red-pigment: #ed1c24;
+$silk: #ffe5d9;
+$blue: #5eb1bf;
+$light-cyan: #cdedf6;
+
+@font-face
+{
+    font-family: 'Expletus';
+    src: url('fonts/ExpletusSans-Regular.ttf');
+}
+
+@font-face
+{
+    font-family: 'Expletus-Bold';
+    src: url('fonts/ExpletusSans-SemiBold.ttf');
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  padding: 0px;
+  font-family: Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: $black-sea;
+  background-color: $silk;
+
+  @media screen and (min-width: 688px) {
+    padding: 0px 40px;
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: 0px 60px;
+  }
+
+  @media screen and (min-width: 1312px) {
+    padding: 0px 120px;
+  }
+
+  @media screen and (min-width: 1800px) {
+    padding: 0px 200px;
+  }
+}
+
+.main {
+  min-height: calc(100vh - 254px);
+}
+
+h1 {
+  font-family: Expletus, sans-serif;
+}
+
+button {
+  padding: 8px 14px;
+  border-radius: 30px;
+  font-size: 1.2em;
+  border: none;
+}
+
+.btn-red {
+  background-color: $red-pigment;
+  color: white;
+
+  &:hover {
+    background-color: lighten($red-pigment, 10%);
+  }
+}
+
+.btn-outline-dark {
+  background-color: transparent;
+  color: $black-sea;
+  border: 1px solid $black-sea;
+  transition: all 0.4s ease-out;
+
+  &:hover {
+    background-color: $black-sea;
+    color:white;
+  }
 }
 
 a {
@@ -13,4 +86,46 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+footer {
+  background-color: $black-sea;
+  color: $silk;
+  height: 180px;
+  padding: 50px 80px;
+  display:flex;
+
+  div {
+    width: 50%;
+  }
+
+  .icon {
+    padding: 0px 15px;
+  }
+
+  @media screen and (min-width: 688px) {
+    padding: 40px 40px;
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: 40px 60px;
+  }
+
+  @media screen and (min-width: 1312px) {
+    padding: 40px 120px;
+  }
+
+  @media screen and (min-width: 1800px) {
+    padding: 40px 200px;
+  }
+}
+
+.footer-link {
+  font-size: 1.2em;
+  color: $silk;
+  font-weight: bold;
+
+  &:hover {
+    color: darken($silk, 10%);
+  }
 }
