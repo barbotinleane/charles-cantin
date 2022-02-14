@@ -16,31 +16,20 @@ $light-cyan: #cdedf6;
     src: url('fonts/ExpletusSans-SemiBold.ttf');
 }
 
+@font-face
+{
+    font-family: 'Comforter';
+    src: url('fonts/Comforter-Regular.ttf');
+}
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 html,
 body {
-  padding: 0px;
   font-family: Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   color: $black-sea;
   background-color: $silk;
-
-  @media screen and (min-width: 688px) {
-    padding: 0px 40px;
-  }
-
-  @media screen and (min-width: 992px) {
-    padding: 0px 60px;
-  }
-
-  @media screen and (min-width: 1312px) {
-    padding: 0px 120px;
-  }
-
-  @media screen and (min-width: 1800px) {
-    padding: 0px 200px;
-  }
 }
 
 .main {
@@ -49,8 +38,75 @@ body {
 
 h1 {
   font-family: Expletus, sans-serif;
+  font-size: 1.7em;
 }
 
+h2 {
+  font-family: Expletus-Bold, sans-serif;
+  font-size: 2.2em;
+}
+
+
+/*boxes */
+.section {
+  padding: 50px 30px;
+
+  @media screen and (min-width: 688px) {
+    padding: 50px 40px;
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: 50px 60px;
+  }
+
+  @media screen and (min-width: 1312px) {
+    padding: 50px 120px;
+  }
+
+  @media screen and (min-width: 1800px) {
+    padding: 50px 200px;
+  }
+}
+
+
+/*Backgrounds and colors*/
+.bg-light-cyan {
+  background-color: $light-cyan;
+}
+
+.bg-blue {
+  background-color: $blue;
+  color: white;
+}
+
+
+/*for text*/
+.size-1 {
+  font-size: 2em;
+}
+
+.size-2 {
+  font-size: 3em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-comforter {
+  font-family: 'Comforter', sans-serif;
+}
+
+.text-expletus {
+  font-family: Expletus, sans-serif;
+}
+
+.text-expletus-bold {
+  font-family: Expletus-Bold, sans-serif;
+}
+
+
+/*For buttons*/
 button {
   padding: 8px 14px;
   border-radius: 30px;
@@ -79,6 +135,9 @@ button {
   }
 }
 
+
+
+
 a {
   color: inherit;
   text-decoration: none;
@@ -87,6 +146,9 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+/*for footer*/
 
 footer {
   background-color: $black-sea;
@@ -128,4 +190,21 @@ footer {
   &:hover {
     color: darken($silk, 10%);
   }
+}
+
+
+
+
+/*for home*/
+
+.bg-home {
+  background-image: url(../public/couple_neige.jpg);
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+}
+
+.text-home {
+  align-self: end;
+  margin: 0px auto;
 }

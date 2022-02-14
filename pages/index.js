@@ -1,8 +1,14 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
+import moi from '../public/moi.jpg'
+import photo1 from '../public/pexels-anna-shvets-4586685.jpg'
+import photo2 from '../public/pexels-leah-kelley-4499827.jpg'
+import photo3 from '../public/pexels-vlada-karpovich-5790837.jpg'
 import styles from '../styles/Home.module.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import CallToAction from '../components/CallToAction'
 
 
 export default function Home() {
@@ -17,47 +23,59 @@ export default function Home() {
       <Header/>
 
       <main className="main">
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <button className="btn-red">Click me !</button>
-        <button className="btn-outline-dark">Click me !</button>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+        <div className="bg-home">
+          <div className="text-home size-1">
+            <h1>Charles Cantin</h1>
+            <p className="text-center text-comforter">Photographe</p>
+          </div>
         </div>
+
+        <div className="bg-light-cyan section">
+          <h2>Qui suis-je ?</h2>
+          <p>
+            Je m&apos;appelle Charles Cantin, j&apos;ai 32 ans. Depuis mon enfance, je suis passionné 
+            par la photographie. Pour vous mettre dans la confidence, à 11 ans, j&apos;ai rassemblé 
+            toutes mes économies des deux années précédentes pour m&apos;offrir mon premier appareil 
+            photo… Et depuis, la photo ne m&apos;a plus quitté !
+          </p>
+
+          <p>
+            J&apos;adore capturer des instants de bonheur et d&apos;amour. Pour moi, la photo c&apos;est cela.
+          </p>
+
+          <p>
+            Alors prenez du plaisir sur mon site et n&apos;hésitez pas à me contacter !
+          </p>
+
+          <div className='w-75 mx-auto'>
+            <Image src={moi} alt="Photo de profil récupérée sur pexels"/>
+          </div>
+        </div>
+
+        <div className='section'>
+          <h2 className='text-center pb-5'>Galerie</h2>
+
+          <div className='row'>
+            <div className='col-6'>
+              <Image src={photo3} alt="Photo de couple récupérée sur pexels"/>
+            </div>
+            <div className='col-6'>
+              <Image src={photo1} alt="Un père et son bébé récupérée sur pexels"/>
+            </div>
+            <div className='col-12'>
+              <Image src={photo2} alt="Une jeune femme récupérée sur pexels"/>
+            </div>
+          </div>
+
+          <div className="text-center pt-5">
+            <Link href="/galerie" passHref={true}>
+              <button className="btn-outline-dark">Voir plus</button>
+            </Link>
+          </div>
+        </div>
+
+        <CallToAction sentence={"Alors, décidés ?"}/>
+        
       </main>
 
       <Footer/>
