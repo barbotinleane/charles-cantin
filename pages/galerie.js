@@ -1,12 +1,67 @@
 import React from 'react'
+import { useState, useEffect } from 'react'
+import axios from 'axios'
+import Image from 'next/image'
+import { Form } from "react-bootstrap"
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 const galerie = () => {
+  const [images, setImages] = useState({
+    images:[]
+  });
+  const [category, setCategory] = useState('all');
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await axios(
+        'http://localhost:3000/api/'+category,
+      );
+
+      setImages(result.data);
+    };
+
+    fetchData();
+  }, [category]);
+
+  const changeCategory = (event) => {
+    setCategory(event.target.value)
+  }
+
   return (
     <>
         <Header/>
     
-        galerie
+        <main className="main">
+          <h1 className='text-center size-2 text-expletus-bold p-5'>
+            Galerie
+          </h1>
+
+          <Form.Select aria-label="Choose a category" onChange={changeCategory.bind(this)}>
+            <option value="all">Toutes les catégories</option>
+            <option value="famille">Famille</option>
+            <option value="couple">Couple</option>
+            <option value="portrait">Portrait</option>
+          </Form.Select>
+
+          <div>
+            {images.images.map((image, index) => {
+              return (
+                <div className='py-3' key={index}>
+                  <Image 
+                  src={image.url}  
+                  alt="Photo pexels" 
+                  width={image.width} 
+                  height={image.height} 
+                  layout="responsive"
+                  />
+                </div>
+              )
+            })}
+          </div>
+        </main>
+
+        <Footer/>
     </>
   )
 }
