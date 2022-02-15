@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { Form } from "react-bootstrap"
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import Galerie from '../components/Galerie'
+import Photo from '../components/Photo'
 
 const galerie = () => {
   return (
@@ -17,7 +17,7 @@ const galerie = () => {
             Galerie
           </h1>
 
-          <Galerie/>
+          <Photo/>
         </main>
 
         <Footer/>
