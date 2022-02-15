@@ -5,9 +5,12 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
-  path: db/images.json
-  label: Ajouter/supprimer des photos
+  path: ".db/images.json"
+  label: Ajouter des photos
   match: "**/*"
+- type: document
+  path: ".db/images.json"
+  label: Ajouter/supprimer des photos
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
