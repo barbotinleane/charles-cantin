@@ -6,10 +6,17 @@
         "height" : 720
     },
     {
-        "url" : "/photos/pexels-andrea-piacquadio-774909(1).jpg",
-        "category" : "portrait",
+        "url" : "/photos/pexels-cleyder-duque-3969272.jpg",
+        "category" : "bebe",
         "width" : 500,
         "height" : 720
+        
+    },
+    {
+        "url" : "/photos/pexels-daniel-reche-1556706.jpg",
+        "category" : "bebe",
+        "width" : 500,
+        "height" : 333
         
     },
     {
@@ -25,14 +32,44 @@
         "height" : 333
     },
     {
-        "url" : "/photos/pexels-jonathan-borba-3014857.jpg",
-        "category" : "couple",
+        "url" : "/photos/pexels-emma-bauso-2253870.jpg",
+        "category" : "mariage",
         "width" : 500,
-        "height" : 720
+        "height" : 333
+    },
+    {
+        "url" : "/photos/pexels-georgia-maciel-2168821.jpg",
+        "category" : "grossesse",
+        "width" : 500,
+        "height" : 333
+    },
+    {
+        "url" : "/photos/pexels-georgia-maciel-2168832.jpg",
+        "category" : "grossesse",
+        "width" : 500,
+        "height" : 333
+    },
+    {
+        "url" : "/photos/pexels-gustavo-fring-4148842.jpg",
+        "category" : "famille",
+        "width" : 500,
+        "height" : 333
     },
     {
         "url" : "/photos/pexels-jonathan-borba-6208042.jpg",
         "category" : "couple",
+        "width" : 500,
+        "height" : 333
+    },
+    {
+        "url" : "/photos/pexels-jonathan-borba-3014857.jpg",
+        "category" : "mariage",
+        "width" : 500,
+        "height" : 720
+    },
+    {
+        "url" : "/photos/pexels-kelvin-octa-1973270.jpg",
+        "category" : "bebe",
         "width" : 500,
         "height" : 333
     },
@@ -43,8 +80,20 @@
         "height" : 720
     },
     {
+        "url" : "/photos/pexels-leah-kelley-618923.jpg",
+        "category" : "grossesse",
+        "width" : 500,
+        "height" : 333
+    },
+    {
         "url" : "/photos/pexels-leah-kelley-4499827.jpg",
         "category" : "portrait",
+        "width" : 500,
+        "height" : 333
+    },
+    {
+        "url" : "/photos/pexels-maria-lindsey-content-creator-1497394.jpg",
+        "category" : "famille",
         "width" : 500,
         "height" : 333
     },
@@ -55,8 +104,50 @@
         "height" : 720
     },
     {
+        "url" : "/photos/pexels-nicholas-githiri-1027931.jpg",
+        "category" : "famille",
+        "width" : 500,
+        "height" : 720
+    },
+    {
+        "url" : "/photos/pexels-pavel-danilyuk-7178886.jpg",
+        "category" : "mariage",
+        "width" : 500,
+        "height" : 333
+    },
+    {
+        "url" : "/photos/pexels-pixabay-2133.jpg",
+        "category" : "bebe",
+        "width" : 500,
+        "height" : 333
+    },
+    {
+        "url" : "/photos/pexels-pixabay-38999.jpg",
+        "category" : "bapteme",
+        "width" : 500,
+        "height" : 333
+    },
+    {
+        "url" : "/photos/pexels-pixabay-50692.jpg",
+        "category" : "bebe",
+        "width" : 500,
+        "height" : 333
+    },
+    {
         "url" : "/photos/pexels-vlada-karpovich-5790837.jpg",
         "category" : "couple",
+        "width" : 500,
+        "height" : 720
+    },
+    {
+        "url" : "/photos/pexels-pixabay-265722.jpg",
+        "category" : "mariage",
+        "width" : 500,
+        "height" : 720
+    },
+    {
+        "url" : "/photos/pexels-pixabay-160624.jpg",
+        "category" : "grossesse",
         "width" : 500,
         "height" : 720
     }

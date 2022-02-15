@@ -13,8 +13,20 @@ export async function getImagesFromCategory(category: string) {
         let imagesFiltered = images.filter(image => image.category === "famille");
         return imagesFiltered;
     }
-    else if(category === "portrait") {
-        let imagesFiltered = images.filter(image => image.category === "portrait");
+    else if(category === "mariage") {
+        let imagesFiltered = images.filter(image => image.category === "mariage");
+        return imagesFiltered;
+    }
+    else if(category === "bebe") {
+        let imagesFiltered = images.filter(image => image.category === "bebe");
+        return imagesFiltered;
+    }
+    else if(category === "grossesse") {
+        let imagesFiltered = images.filter(image => image.category === "grossesse");
+        return imagesFiltered;
+    }
+    else if(category === "bapteme") {
+        let imagesFiltered = images.filter(image => image.category === "bapteme");
         return imagesFiltered;
     }
     else if(category === "couple") {

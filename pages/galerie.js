@@ -42,8 +42,11 @@ const galerie = () => {
             <Form.Select aria-label="Choose a category" onChange={changeCategory.bind(this)}>
               <option value="all">Toutes les catégories</option>
               <option value="famille">Famille</option>
+              <option value="mariage">Mariage</option>
+              <option value="bebe">Bébé</option>
+              <option value="grossesse">Grossesse</option>
               <option value="couple">Couple</option>
-              <option value="portrait">Portrait</option>
+              <option value="bapteme">Baptême</option>
             </Form.Select>
           </div>
 
