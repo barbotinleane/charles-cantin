@@ -37,17 +37,20 @@ const galerie = () => {
             Galerie
           </h1>
 
-          <Form.Select aria-label="Choose a category" onChange={changeCategory.bind(this)}>
-            <option value="all">Toutes les catégories</option>
-            <option value="famille">Famille</option>
-            <option value="couple">Couple</option>
-            <option value="portrait">Portrait</option>
-          </Form.Select>
+          <div className='section'>
+            <p>Choisir une catégorie de photos...</p>
+            <Form.Select aria-label="Choose a category" onChange={changeCategory.bind(this)}>
+              <option value="all">Toutes les catégories</option>
+              <option value="famille">Famille</option>
+              <option value="couple">Couple</option>
+              <option value="portrait">Portrait</option>
+            </Form.Select>
+          </div>
 
-          <div>
+          <div className='row section'>
             {images.images.map((image, index) => {
               return (
-                <div className='py-3' key={index}>
+                <div className='py-3 col-12 col-sm-6 col-md-4' key={index}>
                   <Image 
                   src={image.url}  
                   alt="Photo pexels" 

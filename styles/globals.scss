@@ -105,6 +105,10 @@ h2 {
   font-family: Expletus-Bold, sans-serif;
 }
 
+.text-blue {
+  color: $blue;
+}
+
 
 /*For buttons*/
 button {
@@ -198,13 +202,33 @@ footer {
 /*for home*/
 
 .bg-home {
-  background-image: url(../public/couple_neige.jpg);
+  background-image: linear-gradient(0deg, rgba(205,237,246,1) 0%, rgba(34,193,195,0) 56%), 
+                    url(../public/pexels-vladimir-konoplev-10757695.jpg);
   background-size: cover;
   height: 80vh;
   display: flex;
+
+  @media screen and (min-width: 688px) {
+    background-position: top;
+    background-image: linear-gradient(0deg, rgba(205,237,246,1) 0%, rgba(34,193,195,0) 56%), 
+                      url(../public/pexels-vladimir-konoplev-10757668.jpg);
+    height: 80vh;
+  }
 }
 
 .text-home {
   align-self: end;
   margin: 0px auto;
+}
+
+
+/*for tarifs*/
+
+.box-tarifs {
+  border-radius: 30px;
+  background-color: $light-cyan;
+  -webkit-box-shadow: 5px 4px 25px 3px #0c161850; 
+  box-shadow: 5px 4px 25px 3px #0c161850;
+  padding: 20px;
+  margin: 40px 0px;
 }

@@ -2,9 +2,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import moi from '../public/moi.jpg'
-import photo1 from '../public/pexels-anna-shvets-4586685.jpg'
-import photo2 from '../public/pexels-leah-kelley-4499827.jpg'
-import photo3 from '../public/pexels-vlada-karpovich-5790837.jpg'
+import photo1 from '../public/photos/pexels-anna-shvets-4586685.jpg'
+import photo2 from '../public/photos/pexels-leah-kelley-4499827.jpg'
+import photo3 from '../public/photos/pexels-vlada-karpovich-5790837.jpg'
 import styles from '../styles/Home.module.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -56,13 +56,13 @@ export default function Home() {
           <h2 className='text-center pb-5'>Galerie</h2>
 
           <div className='row'>
-            <div className='col-6'>
+            <div className='col-6 col-md-3'>
               <Image src={photo3} alt="Photo de couple récupérée sur pexels"/>
             </div>
-            <div className='col-6'>
+            <div className='col-6 col-md-3'>
               <Image src={photo1} alt="Un père et son bébé récupérée sur pexels"/>
             </div>
-            <div className='col-12'>
+            <div className='col-12 col-md-6'>
               <Image src={photo2} alt="Une jeune femme récupérée sur pexels"/>
             </div>
           </div>

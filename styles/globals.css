@@ -12057,6 +12057,10 @@ h2, .h2 {
   font-family: Expletus-Bold, sans-serif;
 }
 
+.text-blue {
+  color: #5eb1bf;
+}
+
 /*For buttons*/
 button {
   padding: 8px 14px;
@@ -12152,7 +12156,8 @@ footer .icon {
 
 /*for home*/
 .bg-home {
-  background-image: url(../public/couple_neige.jpg);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#cdedf6), color-stop(56%, rgba(34, 193, 195, 0))), url(../public/pexels-vladimir-konoplev-10757695.jpg);
+  background-image: linear-gradient(0deg, #cdedf6 0%, rgba(34, 193, 195, 0) 56%), url(../public/pexels-vladimir-konoplev-10757695.jpg);
   background-size: cover;
   height: 80vh;
   display: -webkit-box;
@@ -12160,10 +12165,29 @@ footer .icon {
   display: flex;
 }
 
+@media screen and (min-width: 688px) {
+  .bg-home {
+    background-position: top;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#cdedf6), color-stop(56%, rgba(34, 193, 195, 0))), url(../public/pexels-vladimir-konoplev-10757668.jpg);
+    background-image: linear-gradient(0deg, #cdedf6 0%, rgba(34, 193, 195, 0) 56%), url(../public/pexels-vladimir-konoplev-10757668.jpg);
+    height: 80vh;
+  }
+}
+
 .text-home {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
   margin: 0px auto;
+}
+
+/*for tarifs*/
+.box-tarifs {
+  border-radius: 30px;
+  background-color: #cdedf6;
+  -webkit-box-shadow: 5px 4px 25px 3px #0c161850;
+  box-shadow: 5px 4px 25px 3px #0c161850;
+  padding: 20px;
+  margin: 40px 0px;
 }
 /*# sourceMappingURL=globals.css.map */
